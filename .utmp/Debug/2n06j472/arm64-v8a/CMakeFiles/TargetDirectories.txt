@@ -1,0 +1,5 @@
+D:/Mobile_App/.utmp/Debug/2n06j472/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/Mobile_App/.utmp/Debug/2n06j472/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/Mobile_App/.utmp/Debug/2n06j472/arm64-v8a/GameActivity/CMakeFiles/game.dir
+D:/Mobile_App/.utmp/Debug/2n06j472/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+D:/Mobile_App/.utmp/Debug/2n06j472/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
