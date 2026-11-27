@@ -10,8 +10,11 @@ public class MapButtons : MonoBehaviour
     [SerializeField] Image BuildingImage;
     [SerializeField] TMP_Text TitleText;
     [SerializeField] float TapMovement = 20f;
+    [SerializeField] Transform User;
+    [SerializeField] RouteLine RouteLine;
 
     Camera Camera;
+    PlaceOFInterest currentPlace;
     Vector2 position;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -55,8 +58,16 @@ public class MapButtons : MonoBehaviour
     }
     void Open(PlaceOFInterest place)
         {
+           currentPlace = place;
             TitleText.text = place.PlaceName;
             BuildingImage.sprite = place.picture;
             InfoPanel.SetActive(true);
         }
+    public void SetDestination()
+    {
+        if (currentPlace == null) return;
+
+        RouteLine.ShowRoute(User, currentPlace.transform);
+        InfoPanel.SetActive(false);
+    }
     }
